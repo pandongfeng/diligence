@@ -1,0 +1,264 @@
+
+#################################################################################
+基本命令：
+git init git_basic  ##客户端， 有.git文件
+git init --bare git_basic  ##裸工作区，用于服务器，做协调工作， 没有.git,上面git里面的内容直接在当前目录下
+
+
+git add a.txt b.txt    //添加到暂存区
+
+git status  //查看状态， 会提示有a和b两个文件要提交
+
+git commit -m "commit description"   //提交， 在仓库根目录下，全部提交
+
+git rm a   ## 同时删除 仓库和暂存区中的a文件，慎重使用
+
+git reset HEAD a  ## 还原a
+
+git rm --cached a  ##从暂存区中删除a，不删除仓库中的
+
+git status ##查看状态
+
+git mv a c  ##把文件a重命名为c，一系列操作：本地线修改名称,用git status查看，删除了a，添加了c commit
+
+git add A  | git add . ##把所有文件添加到暂存区
+
+添加忽略，目录下添加 .gitignore文件，文件格式如下
+
+文件格式：
+	.[oa]  ##o或者a结尾的
+	.pyc   ##pyc结尾的
+	!test.pyc  ## 和上面的组合使用，pyc文件，但不是test.pyc
+	foo/  ## /表示文件夹
+	**/res/  ##所有目录下的res目录
+
+##################################################################################
+分支相关：
+git init git_checkout_merge  ##创建库
+
+cd git_checkout_merge ## 切换到库目录
+
+vim master.txt
+git add .
+git commit -m "Initial commit on master"  ##增加一段历史提交记录
+
+vim master.txt
+git add .
+git commit -m "Second commit on master"   ##修改信息
+
+git branch test  ##创建test分支
+git checkout test  ## 切换到test分支
+
+vim master.txt  ## 分支上修改
+touch test.txt  ## 添加一个文件
+git add .
+git commit -m "Initial commit on test"  ##分支上提交
+
+git checkout master ## 切回master， 发现上面的提交都没有
+
+#############################################################
+tag：
+
+tag 相关：作用做一个固定的坐标，例如做某一个版本，以后可以直接切到这个版本
+tag两种：一种本地，一种是提交到仓库的（带注释的）
+
+git log  --oneline --decorate --graph --all  ##查看提价记录
+git config --global alias.lol "git log  --oneline --decorate --graph --all"  ##给上面的命令起一个别名lol
+git lol
+
+git tag "v0" a1aba30  ## 后面是哈希，一般5-7位就可以，系统会自动不全，
+		可以不加 默认指向HEAD所在（用lol 查看，里面有一个带有HEAD的提交记录；
+		后面的哈希就是lol前面的提交记录），这是本地的tag
+git tag -a "INITIAL_COMMIT" a1aba30  ##会进入编辑界面，编辑tag的注释信息  这个是带有注释的tag
+
+git tag  ##查看tag列表
+
+git lol  ## 可以看到某次提交后有tag
+
+git show v0  ##查看v0 tag
+
+git checkout INITIAL_COMMIT  ##切换到这个tag上面
+这时处在一个“detached HEAD”的状态，这时如果在这个上面直接修改文件，在切到其他分支时，这部分修改是
+没有历史记录的，因为这个不是真正意义的分支，tag指向的一次历史提交记录
+
+解决上面问题方法
+git checkout -b fix_v0  ## 在当前这个tag下执行，表示创建fix_v0这么一个分支，并且切换到这个分支下
+
+vim master.txt  ##在tag中修改文件
+git add . ##添加缓冲区
+git checkout master ##切换到master中，这时会报错，因为在tag上修改了文件，并没有提交
+		切换分支修改会被覆盖掉，因此要提交或者stash 一下，这里我们stash一下
+
+git stash save -a "stash1"  //保存缓冲区
+
+git status  ##发现本地和仓库中没有变化
+
+git checkout master   ##这是就可以切换到master了
+
+gitcheckout fix_v0  ##在切换回来
+
+git stash list  ## 把之前stash的记录还原回来
+	stash@{0}: On fix_v0 :stash1    ##这个是显示结果stash@{0} 这个引用指向我们创建的stash1
+
+git stash pop --index stash@{0}  ## 还原stash  index参数是指暂存区
+
+git stash list  ## 这是stash1 就没有记录了
+
+##那么我想不删除git stash list中记录，同时又能还原回去，该怎么办
+git stash save -a "stash1"  ##重新操作
+git stash list  ##又能查看stash1 的记录了
+git stash apply --index stash@{0}   //这是不使用 stash pop 这个命令；这样就可不删除git stash list中记录，同时又能还原回去
+git stash drop stash@{0}  ##还可以手动删除git stash list中记录，如果不加stash@{0}，会删除最上面的
+git stash clear  ##删除所有的
+
+##########################################################################
+分支合并：
+git checkout master
+git checkout -b test_merge  ##创建分支，同时切换到这个分支
+
+vim master.txt
+git add .
+git commit -m "Initial commit on test_merge"
+git lol 
+
+git checkout master 
+git merge test_merge  ##master上面执行， 把分支test_merge合并到master上
+
+git merge test ## 合并test分支， 会有冲突
+git  merge --abort 放弃这个合并
+
+git merge test  ##冲突提示文件master.txt
+vim master.txt   ## 手动处理冲突
+git add master.txt
+git commit ## 处理冲突后提交
+
+
+#########################################################################
+查看历史记录
+git log --oneline --decorate --graph  --all  ## 有一些简短hash信息
+
+git show de82fa8  ##查看这个hash对应的提交记录
+git show master  ##查看master上的最新提交
+git show HEAD   ##查看当前库上的最近提交
+
+git show master^2    ##第二父提交和他的父提交之间的差异
+
+git show --oneline   master^2   ##  简短信息
+
+git show --stat master^2   ##输出做出改变的统计信息
+
+把上面的参数合成一行
+git show  --oneline --stat master^2 
+
+git show --format=%T master^2  ##格式化输出
+
+
+git log   ##输出所有日志
+git log -p   ##输出每个版本的差异信息
+git log --stat ##每个log之间的差异统计信息
+
+git log --oneline --decorate --graph  --all
+--decorate   ##commit引用信息
+--graph  ##图形化信息
+--all  ##所有版本信息
+
+git diff  ##工作区和暂存区差异
+git diff --cached  暂存区和历史提交之间的差异
+
+git diff HEAD~2  -- master.txt   ##暂存区和其他历史之间的差异， 可以指定文件
+
+git diff HEAD HEAD~2   ##当前历史和前面两个历史之间的差异
+git diff HEAD HEAD~2   -- master.txt  ##指定文件
+
+git diff --color-words  ##查看具体那些字变化，而不是行
+
+git diff --word-diff  ##标注出来那些是新的
+
+####################################################################################
+撤销和修改
+
+vim master.txt
+git diff
+git status
+git checkout -- master.txt  ## 使用暂存区覆盖工作区内容
+
+vim master.txt
+git add master.txt
+git status
+
+git reset master.txt  ## 撤销暂存去中修改
+git dff  --cached  仓库和暂存区没有差异了
+
+git status  ##本地和暂存区中有了差别
+
+git checkout INITIAL_COMMIT -- master.txt  ##用提交历史还原工作区和暂存区中的内容
+git diff --cached  暂存区和提交历史不同
+
+git checkout HEAD --master.txt  ## 还原到最新版本
+
+git reset INITAL_COMMIT --master.txt ##使用提交历史还原暂存区，不还原工作区
+
+
+######################################################################################
+清理：
+touch test.o  test.a  ##创建两个没有用的文件
+git clean -n   ##查看会移除那些文件
+git clean -f   ##强制移除上面n参数的文件
+
+
+vim  .gitignore  ## .[oa]  忽略o和a结尾的
+git add .gitignore 
+git commit -m "add ignore"
+touch test.o test.a test.c  ##新建两个文件
+git clean -n  ## 查看clean 会移除哪些文件
+   ##只移除了test.c  也就是说clean清楚会忽略.gitignore中的文件
+git clean -n -X  ##看这个结果， 查看会移除那些文件， o和a 就是.gitignore中的，test.c 不会清理
+git clean -f -X   ##删除 test.a test.o   注意x不能是小写，小写就会三个文件都删除
+
+git revert HEAD  ##删除.gitignore 文件  并提交
+
+--------------修改历史提交记录-------------
+git lol  ##查看历史
+git checkout HEAD~ -- .gitignore  ##还原上面删除.gitignore文件，还原到当前版本的上一个版本
+git add test.c
+git commit --amend  ##修改上次提交注释信息
+
+
+------------------rebase--------------
+vim master.txt   ##master上
+git add master.txt
+git commit -m "conflict rebase"
+
+git checkout -b test_rebase HEAD~   ##在上次提交之前的提交创建一个分支并切换
+vim master.txt  ##test_rebase上
+git add master.txt
+git commit -m "Initial commit on test_rebase"
+
+
+
+##上面的操作实际上就是主干和分支之间产生了冲突，这个分支通过merge合并主干时，冲突文件的历史记录是两条记录的
+##如果我们想要一条线性的提交记录该怎么办，通过rebase命令
+git rebase master  ##分支上执行，后面是分支名（master）
+   	##提示冲突，如果要放弃
+git rebase --abort  ##放弃rebase
+vim master.txt  ##修改冲突
+git rebase --continue  ##继续rebase， 提示使用git add
+
+git add master.txt
+git rebase --continue
+git lol ##查看历史
+
+##这是如果发现我们rebase合并错了，怎么还原呢
+git reflog   ##先查看历史记录，这个命令中维护了head引用的历史
+	里面会看到一大推rebase 记录，我们还原到rebase之前一个记录
+git reset --hard HEAD@{5} ##还原到上面rebase之前
+git lol 查看历史记录
+
+git reset --mixed HEAD~  ## 使用历史记录还原了暂存区，没有还原工作区
+git reflog -10 查看近10条的HEAD记录
+git reset --hard HEAD@{1}  ##hard 会把工作区和暂存区都还原
+
+git reset --soft        ##什么都不会还原，只改变HEAD指针 ，就是说工作区和暂存区一样，但是历史记录被修改了
+
+##上面的命令尽量不要，错了重新提交，还原历史记录会使别人很困惑
+
