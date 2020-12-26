@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-26T09:59:58.486Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="yPkfMR9ny4op99CvPVLu" version="14.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-26T10:03:16.044Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="WUZ9yhWHn6F0qUsRkUBw" version="14.1.2" type="github">
   <diagram id="wbtQebCqkb7v4KOvZVG4" name="第 1 页">
     <mxGraphModel dx="981" dy="1744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -474,6 +474,15 @@
         </mxCell>
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-144" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#B9E0A5;strokeWidth=1;fontSize=9;" edge="1" parent="1" source="chGvUEU8lOG_RV2B_Zeu-139" target="chGvUEU8lOG_RV2B_Zeu-139">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-153" value="&lt;span&gt;1.每个结点最多有两颗子树，&lt;/span&gt;&lt;span&gt;所以二叉树中不存在度大于2的结点。&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="315" y="-450" width="196.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-154" value="&lt;span&gt;2.左子树和右子树是有顺序的，次序不能任意颠倒。&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="317.5" y="-405" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-155" value="&lt;span&gt;3.即使树中某结点只有一棵子树，也要区分它是左子树还是右子树。&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="315" y="-380" width="187.5" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
