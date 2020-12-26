@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-26T10:17:53.308Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="cTg5SPvXo2sQ1tiDuAjT" version="14.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-26T10:25:31.786Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="nbPpm_h_cyE388zkt3jr" version="14.1.2" type="github">
   <diagram id="wbtQebCqkb7v4KOvZVG4" name="第 1 页">
     <mxGraphModel dx="981" dy="1744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
       <root>
@@ -91,22 +91,22 @@
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-31" value="F" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="430" y="-990" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-34" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; background-color: rgb(255 , 255 , 255)&quot;&gt;1. 有且仅有一个特定的称为根（Root）的结点&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontColor=#393C56;" vertex="1" parent="1">
-          <mxGeometry x="459" y="-1070" width="150" height="20" as="geometry" />
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-34" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; background-color: rgb(255 , 255 , 255)&quot;&gt;1. 有且仅有一个特定的称为&lt;b&gt;根&lt;/b&gt;（Root）的结点&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="459" y="-1070" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-35" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; font-style: normal ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;图1&amp;nbsp; 普通的树&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontStyle=1;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="304" y="-890" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-38" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 9px ; background-color: rgb(255 , 255 , 255)&quot;&gt;2. 根的子树， 某个&lt;/span&gt;结&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 9px ; background-color: rgb(255 , 255 , 255)&quot;&gt;点&lt;/span&gt;&lt;font color=&quot;#404040&quot; size=&quot;1&quot;&gt;子树的个数没有限制，但它们一定是互不相交的。&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-38" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 9px ; background-color: rgb(255 , 255 , 255)&quot;&gt;2. &lt;b&gt;根的子树&lt;/b&gt;， 某个&lt;/span&gt;结&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 9px ; background-color: rgb(255 , 255 , 255)&quot;&gt;点&lt;/span&gt;&lt;font color=&quot;#404040&quot; size=&quot;1&quot;&gt;子树的个数没有限制，但它们一定是互不相交的。&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="460" y="-1030" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-47" value="节点D是结点B的【孩子结点】" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-47" value="节点D是结点B的【&lt;b&gt;孩子结点&lt;/b&gt;】" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="140" y="-1070" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-48" value="结点B是结点D的【双亲结点】" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-48" value="结点B是结点D的【&lt;b&gt;双亲结点&lt;/b&gt;】" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="140" y="-1020" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-49" value="同一个双亲结点的孩子结点之间互称为【兄弟结点】" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-49" value="同一个双亲结点的孩子结点之间互称为【&lt;b&gt;兄弟结点&lt;/b&gt;】" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="140" y="-970" width="110" height="47.5" as="geometry" />
         </mxCell>
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-50" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#E07A5F;strokeWidth=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="chGvUEU8lOG_RV2B_Zeu-35" target="chGvUEU8lOG_RV2B_Zeu-35">
@@ -199,7 +199,7 @@
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-71" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; font-style: normal ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;图2&amp;nbsp; 结点的度&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontStyle=1;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="181.5" y="-615" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-72" value="结点拥有的子树数目称为结点的度。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-72" value="结点拥有的子树数目称为结点的&lt;b&gt;度&lt;/b&gt;。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="34" y="-820" width="106" height="40" as="geometry" />
         </mxCell>
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-73" value="度为2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
@@ -382,7 +382,7 @@
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-118" value="深度4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="450" y="-777.5" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-119" value="树中结点的最大层次数称为树的深度或高度。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-119" value="树中结点的最大层次数称为树的&lt;b&gt;深度&lt;/b&gt;或&lt;b&gt;高度&lt;/b&gt;。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=9;fontColor=#393C56;" vertex="1" parent="1">
           <mxGeometry x="500" y="-857.5" width="260" height="20" as="geometry" />
         </mxCell>
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-120" value="D" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
@@ -475,11 +475,11 @@
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-144" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#E07A5F;strokeWidth=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="chGvUEU8lOG_RV2B_Zeu-139" target="chGvUEU8lOG_RV2B_Zeu-139">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-153" value="&lt;span&gt;【二叉树特点】&lt;br&gt;&lt;br&gt;1.每个结点最多有两颗子树，&lt;/span&gt;&lt;span&gt;所以二叉树中不存在度大于2的结点。&lt;br&gt;&lt;/span&gt;2.左子树和右子树是有顺序的，次序不能任意颠倒。&lt;br&gt;3.即使树中某结点只有一棵子树，也要区分它是左子树还是右子树。&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" vertex="1" parent="1">
-          <mxGeometry x="330" y="-510" width="365" height="120" as="geometry" />
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-153" value="&lt;span&gt;&lt;b&gt;【二叉树特点】&lt;/b&gt;&lt;br&gt;&lt;br&gt;1.每个结点最多有两颗子树，&lt;/span&gt;&lt;span&gt;所以二叉树中不存在度大于2的结点。&lt;br&gt;&lt;/span&gt;2.左子树和右子树是有顺序的，次序不能任意颠倒。&lt;br&gt;3.即使树中某结点只有一棵子树，也要区分它是左子树还是右子树。&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-530" width="365" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-156" value="【二叉树性质】&lt;br&gt;&lt;br&gt;1.在二叉树的第i层上最多有2&lt;sup&gt;i-1&lt;/sup&gt;&amp;nbsp;个节点 。（i&amp;gt;=1）&lt;br&gt;2.二叉树中如果深度为k,那么最多有2&lt;sup&gt;k&lt;/sup&gt;-1个节点。(k&amp;gt;=1）&lt;br&gt;3.n&lt;sub&gt;0&lt;/sub&gt;=n&lt;sub&gt;2&lt;/sub&gt;+1 n&lt;sub&gt;0&lt;/sub&gt;表示度数为0的节点数，n&lt;sub&gt;2&lt;/sub&gt;表示度数为2的节点数。&lt;br&gt;4.在完全二叉树中，具有n个节点的完全二叉树的深度为[log&lt;sub&gt;2&lt;/sub&gt;n]+1，其中[log&lt;sub&gt;2&lt;/sub&gt;n]是向下取整。" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" vertex="1" parent="1">
-          <mxGeometry x="337.5" y="-380" width="365" height="120" as="geometry" />
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-156" value="&lt;b&gt;【二叉树性质】&lt;/b&gt;&lt;br&gt;&lt;br&gt;1.在二叉树的第i层上最多有2&lt;sup&gt;i-1&lt;/sup&gt;&amp;nbsp;个节点 。（i&amp;gt;=1）&lt;br&gt;2.二叉树中如果深度为k,那么最多有2&lt;sup&gt;k&lt;/sup&gt;-1个节点。(k&amp;gt;=1）&lt;br&gt;3.n&lt;sub&gt;0&lt;/sub&gt;=n&lt;sub&gt;2&lt;/sub&gt;+1 n&lt;sub&gt;0&lt;/sub&gt;表示度数为0的节点数，n&lt;sub&gt;2&lt;/sub&gt;表示度数为2的节点数。&lt;br&gt;4.在完全二叉树中，具有n个节点的完全二叉树的深度为[log&lt;sub&gt;2&lt;/sub&gt;n]+1，其中[log&lt;sub&gt;2&lt;/sub&gt;n]是向下取整。&lt;br&gt;5.若对含 n 个结点的完全二叉树从上到下且从左至右进行 1 至 n 的编号，则对完全二叉树中任意一个编号为 i 的结点有如下特性：&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;i style=&quot;font-size: 10px&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;(&lt;/font&gt;&lt;font face=&quot;Garamond&quot;&gt;1) 若 i=1，则该结点是二叉树的根，无双亲, 否则，编号为 [i/2] 的结点为其双亲结点;&lt;br style=&quot;font-size: 10px&quot;&gt;(2) 若 2i&amp;gt;n，则该结点无左孩子， 否则，编号为 2i 的结点为其左孩子结点；&lt;br style=&quot;font-size: 10px&quot;&gt;(3) 若 2i+1&amp;gt;n，则该结点无右孩子结点， 否则，编号为2i+1 的结点为其右孩子结点。&lt;/font&gt;&lt;/i&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-390" width="365" height="230" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
