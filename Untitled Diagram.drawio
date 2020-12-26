@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2020-12-26T08:53:56.883Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="7aFiT-xOAapatPAp2aFi" version="14.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-26T09:15:51.659Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="Sir01KyloU0denxz75iI" version="14.1.2" type="github">
   <diagram id="wbtQebCqkb7v4KOvZVG4" name="第 1 页">
-    <mxGraphModel dx="813" dy="1646" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="981" dy="1744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-36" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;dashed=1;strokeColor=#97D077;" vertex="1" parent="1">
+          <mxGeometry x="250" y="-910" width="90" height="130" as="geometry" />
+        </mxCell>
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-2" value="D" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="170" y="-860" width="30" height="30" as="geometry" />
         </mxCell>
@@ -87,6 +90,15 @@
         </mxCell>
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-31" value="F" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="310" y="-860" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-34" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; background-color: rgb(255 , 255 , 255)&quot;&gt;1. 有且仅有一个特定的称为根（Root）的结点&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="339" y="-940" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-35" value="&lt;br style=&quot;font-size: 8px&quot;&gt;&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; font-style: normal ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;图&amp;nbsp; 普通的树&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="-760" width="110" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-38" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 9px ; background-color: rgb(255 , 255 , 255)&quot;&gt;2. 根的子树， 某个节点&lt;/span&gt;&lt;font color=&quot;#404040&quot; size=&quot;1&quot;&gt;子树的个数没有限制，但它们一定是互不相交的。&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="340" y="-900" width="180" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
