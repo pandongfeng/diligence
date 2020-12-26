@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-26T10:31:06.212Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="hU2M-Kd8akvv7XaYhsRr" version="14.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-26T11:13:37.590Z" agent="5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="Hhq6pgW5QJiKigfh7YJn" version="14.1.2" type="github">
   <diagram id="wbtQebCqkb7v4KOvZVG4" name="第 1 页">
-    <mxGraphModel dx="1422" dy="2003" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="1864" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F4F1DE" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -469,7 +469,7 @@
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-138" value="F" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" parent="1" vertex="1">
           <mxGeometry x="267.5" y="-395" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="chGvUEU8lOG_RV2B_Zeu-139" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; font-style: normal ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;图2&amp;nbsp; 二叉树&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontStyle=1;fontColor=#393C56;" parent="1" vertex="1">
+        <mxCell id="chGvUEU8lOG_RV2B_Zeu-139" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; font-style: normal ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;图4&amp;nbsp; 二叉树&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontStyle=1;fontColor=#393C56;" parent="1" vertex="1">
           <mxGeometry x="146.5" y="-250" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-144" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#E07A5F;strokeWidth=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" parent="1" source="chGvUEU8lOG_RV2B_Zeu-139" target="chGvUEU8lOG_RV2B_Zeu-139" edge="1">
@@ -480,6 +480,84 @@
         </mxCell>
         <mxCell id="chGvUEU8lOG_RV2B_Zeu-156" value="&lt;b&gt;【二叉树性质】&lt;/b&gt;&lt;br&gt;&lt;br&gt;1.在二叉树的第i层上最多有2&lt;sup&gt;i-1&lt;/sup&gt;&amp;nbsp;个节点 。（i&amp;gt;=1）&lt;br&gt;2.二叉树中如果深度为k,那么最多有2&lt;sup&gt;k&lt;/sup&gt;-1个节点。(k&amp;gt;=1）&lt;br&gt;3.n&lt;sub&gt;0&lt;/sub&gt;=n&lt;sub&gt;2&lt;/sub&gt;+1 n&lt;sub&gt;0&lt;/sub&gt;表示度数为0的节点数，n&lt;sub&gt;2&lt;/sub&gt;表示度数为2的节点数。&lt;br&gt;4.在完全二叉树中，具有n个节点的完全二叉树的深度为[log&lt;sub&gt;2&lt;/sub&gt;n]+1，其中[log&lt;sub&gt;2&lt;/sub&gt;n]是向下取整。&lt;br&gt;5.若对含 n 个结点的完全二叉树从上到下且从左至右进行 1 至 n 的编号，则对完全二叉树中任意一个编号为 i 的结点有如下特性：&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;&lt;i style=&quot;font-size: 10px&quot;&gt;&lt;font face=&quot;Comic Sans MS&quot;&gt;(&lt;/font&gt;&lt;font face=&quot;Garamond&quot;&gt;1) 若 i=1，则该结点是二叉树的根，无双亲, 否则，编号为 [i/2] 的结点为其双亲结点;&lt;br style=&quot;font-size: 10px&quot;&gt;(2) 若 2i&amp;gt;n，则该结点无左孩子， 否则，编号为 2i 的结点为其左孩子结点；&lt;br style=&quot;font-size: 10px&quot;&gt;(3) 若 2i+1&amp;gt;n，则该结点无右孩子结点， 否则，编号为2i+1 的结点为其右孩子结点。&lt;/font&gt;&lt;/i&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" parent="1" vertex="1">
           <mxGeometry x="330" y="-390" width="365" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-2" value="C" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="61.5" y="10" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-3" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="127.5" y="-90" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-5" value="D" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="31.5" y="60" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-9" value="" style="endArrow=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#E07A5F;strokeWidth=1;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="XKpCa2xonjf-DVwe5qaf-17" target="XKpCa2xonjf-DVwe5qaf-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="21.5" y="-30" as="sourcePoint" />
+            <mxPoint x="71.5" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-10" value="" style="endArrow=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#E07A5F;strokeWidth=1;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="XKpCa2xonjf-DVwe5qaf-2" target="XKpCa2xonjf-DVwe5qaf-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="76.5" y="20" as="sourcePoint" />
+            <mxPoint x="301.5" y="20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-13" value="" style="endArrow=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#E07A5F;strokeWidth=1;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="XKpCa2xonjf-DVwe5qaf-5" target="XKpCa2xonjf-DVwe5qaf-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-38.5" y="30" as="sourcePoint" />
+            <mxPoint x="11.5" y="-20" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-17" value="B" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="91.5" y="-40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-21" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; font-style: normal ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;图5&amp;nbsp; 左斜树&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontStyle=1;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="51.5" y="110" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-22" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#E07A5F;strokeWidth=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="XKpCa2xonjf-DVwe5qaf-21" target="XKpCa2xonjf-DVwe5qaf-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-24" value="A" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="240" y="-90" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-25" value="D" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="337.5" y="60" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-29" value="" style="endArrow=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=1;strokeColor=#E07A5F;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="XKpCa2xonjf-DVwe5qaf-39" target="XKpCa2xonjf-DVwe5qaf-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="394" y="-50" as="sourcePoint" />
+            <mxPoint x="444" y="-100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-32" value="" style="endArrow=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0.369;exitY=0.051;exitDx=0;exitDy=0;strokeColor=#E07A5F;strokeWidth=1;exitPerimeter=0;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1" source="XKpCa2xonjf-DVwe5qaf-41" target="XKpCa2xonjf-DVwe5qaf-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="474" y="40" as="sourcePoint" />
+            <mxPoint x="309.6066017177984" y="-14.393398282201701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-39" value="B" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="274" y="-40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-41" value="C" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#F2CC8F;strokeColor=#E07A5F;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="311" y="10" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-42" value="&lt;span style=&quot;color: rgb(64 , 64 , 64) ; font-size: 8px ; font-style: normal ; letter-spacing: normal ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255) ; display: inline ; float: none&quot;&gt;图6&amp;nbsp; 右斜树&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;fontStyle=1;fontColor=#393C56;" vertex="1" parent="1">
+          <mxGeometry x="247.5" y="110" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-43" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#E07A5F;strokeWidth=1;fontSize=9;labelBackgroundColor=#F4F1DE;fontColor=#393C56;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="164.99999999999977" as="sourcePoint" />
+            <mxPoint x="300" y="164.99999999999977" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-44" value="" style="endArrow=none;html=1;strokeColor=#E07A5F;strokeWidth=1;labelBackgroundColor=#F4F1DE;fontColor=#393C56;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="XKpCa2xonjf-DVwe5qaf-41" target="XKpCa2xonjf-DVwe5qaf-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="341" y="40" as="sourcePoint" />
+            <mxPoint x="341" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XKpCa2xonjf-DVwe5qaf-45" value="【&lt;b&gt;斜树&lt;/b&gt;】&lt;br&gt;所有的结点都只有左子树的二叉树叫左斜树。所有结点都是只有右子树的二叉树叫右斜树。这两者统称为斜树。" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="357.5" y="-50" width="220" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
